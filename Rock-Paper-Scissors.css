@@ -1,0 +1,58 @@
+body{
+    background-color: black;
+}
+p{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+button{
+    background-color: white;
+    border-width:2px;
+    border-color: gold;
+    border: solid;
+}
+.c1{
+    border-radius: 3000px;  
+    background-color: black;
+
+}
+.c11{
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    background-color: black;
+}
+.c2{
+    border-radius: 3000px;
+    background-color: black;
+
+}
+.c21{
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    background-color: black;
+}
+.c3{
+    border-radius: 3000px;
+    background-color: black;
+
+}
+.c31{
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    background-color: black;
+}
+.d{
+    height:40px;
+    width:100px;
+    color: black;
+}
+.d1{
+    height:40px;
+    width:100px;
+    color: black;
+}
