@@ -14,13 +14,13 @@ let z = document.querySelector('.c3');
 let d = document.querySelector('.d');
 let d1 = document.querySelector('.d1')
 x.addEventListener('click',()=>{
-    decision('Rock');
+    decision('rock');
 });
 y.addEventListener('click',()=>{
-    decision('Paper');
+    decision('paper');
 });
 z.addEventListener('click',()=>{
-    decision('Scissors');
+    decision('scissors');
 });
 d.addEventListener('click',()=>{
     document.querySelector('.p1').innerHTML=`Are you sure about that?`;
@@ -52,13 +52,13 @@ d1.addEventListener('click',()=>{
 });
 document.body.addEventListener('keydown',(event)=>{
     if(event.key === 'r'){
-    decision('Rock');
+    decision('rock');
     }
     else if(event.key === 'p'){
-        decision('Paper');
+        decision('paper');
         }
     else if(event.key === 's'){
-        decision('Scissors');
+        decision('scissors');
         }
     else if(event.key === 'a'){
         autoPlay();
@@ -114,28 +114,28 @@ function decision(UserInput) {
     let compInput = computerInput();
     let result = '';
 
-    if (UserInput === 'Rock') {
-        if (compInput === 'Rock') {
+    if (UserInput === 'rock') {
+        if (compInput === 'rock') {
             result = 'Tie';
         } else if (compInput === 'Paper') {
             result = 'You Lose';
-        } else if (compInput === 'Scissors') {
+        } else if (compInput === 'scissors') {
             result = 'You Win';
         }
-    } else if (UserInput === 'Paper') {
-        if (compInput === 'Rock') {
+    } else if (UserInput === 'paper') {
+        if (compInput === 'rock') {
             result = 'You Win';
-        } else if (compInput === 'Paper') {
+        } else if (compInput === 'paper') {
             result = 'Tie';
-        } else if (compInput === 'Scissors') {
+        } else if (compInput === 'scissors') {
             result = 'You Lose';
         }
-    } else if (UserInput === 'Scissors') {
-        if (compInput === 'Rock') {
+    } else if (UserInput === 'scissors') {
+        if (compInput === 'rock') {
             result = 'You Lose';
-        } else if (compInput === 'Paper') {
+        } else if (compInput === 'paper') {
             result = 'You Win';
-        } else if (compInput === 'Scissors') {
+        } else if (compInput === 'scissors') {
             result = 'Tie';
         }
     }
@@ -162,10 +162,10 @@ function resetScore() {
 function computerInput() {
     let random = Math.random();
     if (random < 1 / 3) {
-        return 'Rock';
+        return 'rock';
     } else if (random < 2 / 3) {
-        return 'Paper';
+        return 'paper';
     } else {
-        return 'Scissors';
+        return 'scissors';
     }
 }
